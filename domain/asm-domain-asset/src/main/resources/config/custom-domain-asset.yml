@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: local
+---
+spring:
+  profiles: local
+  h2:
+    console:
+      enabled: true
+      path: /console
+---
+spring:
+  profiles: prod
+  h2:
+    console:
+      enabled: true
+      path: /console
